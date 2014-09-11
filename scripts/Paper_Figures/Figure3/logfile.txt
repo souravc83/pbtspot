@@ -1,0 +1,21 @@
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 0
+DEBUG:root:Empirical distribution: [0.49999999999999484, 0.49999999999999484]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 1
+DEBUG:root:Empirical distribution: [0.8067415730337134, 0.19325842696629472]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 2
+DEBUG:root:Empirical distribution: [0.9223880597014998, 0.07761194029850768]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 2
+DEBUG:root:Empirical distribution: [0.5223880597014905, 0.47761194029850546]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 1
+DEBUG:root:Empirical distribution: [0.18925233644860034, 0.8107476635514115]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 2
+DEBUG:root:Empirical distribution: [0.5035460992907801, 0.4964539007092198]
+DEBUG:root:Node: 
+DEBUG:root:Tree Depth: 2
+DEBUG:root:Empirical distribution: [0.041533546325878565, 0.9584664536741258]

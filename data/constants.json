@@ -1,0 +1,18 @@
+{
+    "gamma": 0,
+    "global_window_height": 10,
+    "global_window_width": 10,
+    "image_type": "A",
+    "is_lowres": false,
+    "lowres_height": 128,
+    "lowres_width": 128,
+    "maxdepth_tree": 4,
+    "no_neg_testing_eg": 4000,
+    "no_neg_training_eg": 100,
+    "no_pos_testing_eg": 4000,
+    "no_pos_training_eg": 100,
+    "overfitting_e": 0.1,
+    "particle_shape": "round",
+    "prob_threshold": 0.5,
+    "training_rounds": 7
+}

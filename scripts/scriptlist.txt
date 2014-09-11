@@ -1,0 +1,22 @@
+>. Script to get images of different types:
+
+>. script to get most important Haar features in type A and type B images
+
+>. script to compare adaboost and tree for a range of SNRs: adaboost_tree_compare.py
+
+>. script to plot training and testing accuracy of tree with training rounds:
+pbt_overfitting_training_rounds.py
+
+>. script to plot training and testing accuracy with overfitting_e:
+>pbt_overfitting_e.py
+
+>. script to plot ROC curve for Tree for different SNR, gradient noise, different shapes:
+
+>. script to draw schematic of tree with 3 levels (_plot_histogram function used):
+
+>. plot of no. of examples with Adaboost test accuracy:
+
+>. script to generate lowres images and plotting 10*10 probability map around
+the images and fit a 2D Gaussian to it
+
+>.mean RMS pixel deviation with SNR  

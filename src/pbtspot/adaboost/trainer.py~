@@ -1,0 +1,74 @@
+
+#import from standard library
+import logging
+
+#import local modules
+from Features import basefeature,diff_features
+from Image_Generate import image_generate
+
+logging.basicConfig(filename='logfile.txt',level=logging.DEBUG)
+
+class Trainer:
+    
+    def __init__(self):
+        self.features=[];#list of features;
+        self.xlim=10; #read from read constants file
+        self.ylim=10;
+        self.training_examples=None;
+        
+    
+    def generate_features(self):
+        #Don't make any more compact, because I want to know
+        #how many of each type of feature is created;
+        feature_types=[];
+        feature_types.append(diff_features.EdgeFeature_1());
+        feature_types.append(diff_features.EdgeFeature_2());
+        feature_types.append(diff_features.LineFeature_1());
+        feature_types.append(diff_features.LineFeature_2());
+        feature_types.append(diff_features.LineFeature_3());
+        feature_types.append(diff_features.LineFeature_4());
+        feature_types.append(diff_features.CenterFeature());
+        
+        for feature in feature_types:
+            self.generate_each_feature(feature);
+        return;
+        
+        
+                
+    def generate_each_feature(self,this_feature):
+        
+        self.test_featurecount=0;#for debugging purposes
+        width_incr=this_feature.width_incr;
+        height_incr=this_feature.height_incr;
+        
+        for width in range(width_incr,self.xlim+width_incr,width_incr):
+            for height in range(height_incr,self.ylim+height_incr,height_incr):
+
+                for x_val in range(0,self.xlim-width+1):
+                    for y_val in range(0,self.ylim-height+1):
+                        rectlist=this_feature.generate_feature(x_val,y_val,width,height);
+                        self.features.append(basefeature.BaseFeature(rectlist));
+                        self.test_featurecount+=1;
+           
+        #print self.test_featurecount; 
+        #logging.debug(self.test_featurecount);
+        return;
+        
+    def get_training_examples(self):
+	#need to read from file if file exists
+
+	#if training examples do not exist
+
+        self.pos_training_examples=[];
+        img_gen=image_generate.GenerateImage();
+	
+	for i in range(img_gen.no_particles):
+	    x_loc=img_gen.particle_x[i];
+	    y_loc=img_gen.particle_y[i];
+	    pos_img=img_gen.imgarr[y_loc-5:y_loc+5,x_loc-5:x_loc+5];
+
+
+
+
+        
+                    

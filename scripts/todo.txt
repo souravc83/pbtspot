@@ -1,0 +1,15 @@
+1. script to get images of different types and snr.-figure 1.
+2. script to get most important hair features in different cases-fig2.
+3. code to save and load examples.X
+4. separate eg_img for train and test.X
+5. code to test trainer with sample_image_generate
+6. code to plot precision and recall curves. script should only plot, not compare.X
+7. transfer a lot of isolated hard coded values to global constants file.X
+8. script to get stuff for lowres images.
+9. in the end, script for tracking.
+10. much better and tighter tests in general, in which we can have confidence.
+11. correct .5 discrepancy in show_image somewhere
+12. try to make stuff more private for each class, without breaking implementation,maybe break a few tests.
+13. script for adaboost compared to tree for accuracy.
+14. in general, script should not contain code. that should be in software.
+15. 
